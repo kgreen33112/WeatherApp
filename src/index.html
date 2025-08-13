@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+      <h1 class="header">Weather App</h1>
+      <div id="input" class="input">
+      <form id="checkWeatherForm" class="check-weather-form">
+        <label for="location">Location:</label>
+        <input type="text" id="locationInput" name="location">
+        <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
+      </form>
+      </div>
+      <button type="button" id="checkWeatherBtn" class="check-weather-btn">Check My Weather</button>
+    </header>    
+    <div id="weatherContainer" class="weather-container">
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
